@@ -28,7 +28,7 @@ lbl_entrada.grid(row=0, column=0, padx=10, pady=5, sticky="w")
 
 txt_entrada = scrolledtext.ScrolledText(frame_principal, width=60, height=10, wrap=tk.WORD)
 txt_entrada.grid(row=1, column=0, padx=10, pady=5, columnspan=2)
-txt_entrada.insert(tk.INSERT, 'alter table columna drop column')
+txt_entrada.insert(tk.INSERT, 'alter table clientes drop column id;')
 
 # boton para analizar
 btn_analizar = tk.Button(frame_principal, text="Analizar", command=analizar, bg="#007bff", fg="white", font=("Arial", 12))  
